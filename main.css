@@ -68,7 +68,7 @@ main {
 }
 article {
   margin: 20px auto;
-  width: 80%;
+  width: 85%;
   padding: 20px;
   color: var(--bg-color);
   background-color: var(--secondary-color);
