@@ -11,8 +11,8 @@
 }
 
 .hero {
-  height: 85vh;
-  width: 85vw;
+  height: 86.5vh;
+  width: 86.5vw;
   position: relative;
   display: flex;
   justify-content: center;
@@ -20,8 +20,8 @@
   color: var(--text-color);
   font-size: 2rem;
   justify-self: center;
-  margin: 100px auto;
-  margin-top: 0px;
+  margin: 50px auto;
+  margin-top: 50px;
 }
 
 .hero video {
@@ -87,11 +87,22 @@
   scroll-snap-align: start;
 } */
 
-.history {
+.direction {
   display: flex;
   flex-direction: row;
-  height: 60vh;
+  height: 45vh;
 }
+/* .direction::after {
+  content: "";
+  display: block;
+  width: 0.25vw;
+  height: 100%;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  margin-top: -20px;
+} */
 .illust {
   width: 50%;
   height: 100%;
@@ -103,6 +114,16 @@
   width: 400px;
   min-width: 50%;
   border-radius: 7px;
+  transition: transform 0.3s ease;
+}
+.illust img:hover {
+  transform: scale(1.05);
+}
+.illust::after {
+  content: "";
+  display: block;
+  width: 0.25vw;
+  height: 0.25vw;
 }
 .article-text {
   width: 50%;
@@ -111,6 +132,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .article-button {
   margin-top: 50px;
