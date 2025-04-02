@@ -56,7 +56,7 @@ header {
 }
 
 #logo img {
-  width: 1fr;
+  width: 25%;
   height: auto;
   margin: 0 auto;
   display: inline-block;
