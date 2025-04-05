@@ -169,7 +169,10 @@
 }
 .img-container img {
   border-radius: 10px;
+  max-height: 85vh;
+  min-height: 85vh;
   width: 100%;
+  object-fit: cover;
 }
 .img-points {
   width: 100%;
