@@ -1,0 +1,37 @@
+:root {
+  --bg-color: #292727;
+  --text-color: #ffffff;
+  --primary-color: #26758d;
+  --secondary-color: #e7e7e7;
+  /* Az e felett lévő színeket lehet használni var(--szín) használatával */
+}
+
+/*Zsombor része*/
+.story {
+  background-color: #292727;
+  text-align: center;
+  margin: 20px 0;
+  max-width: 145vh;
+}
+
+/* Extra stílus a listákhoz */
+.feature-list,
+.info-list {
+  text-align: left;
+  display: inline-block;
+  margin: 20px auto;
+  padding: 15px 40px;
+  background-color: rgba(
+    38,
+    117,
+    141,
+    0.15
+  ); /* enyhe árnyalat a primary color alapján */
+  border-radius: 5px;
+}
+
+.feature-list li,
+.info-list li {
+  margin: 5px 0;
+  line-height: 1.5;
+}

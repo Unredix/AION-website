@@ -14,6 +14,10 @@ body {
   color: var(--text-color);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   padding: 20px;
   text-align: center;
@@ -85,6 +89,34 @@ bottom {
   font-size: 1.2em;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.jump-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.jump-to-top a img {
+  width: 20px;
+  height: 16px;
+}
+.jump-to-top a {
+  text-decoration: none;
+  color: var(--bg-color);
+  padding: 3px;
+  position: relative;
+  padding: 5px;
+}
+.jump-to-top:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 @keyframes vonalJobbBal {
