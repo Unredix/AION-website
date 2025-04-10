@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AION - Főoldal</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <img src="imgs/logo.png" alt="AION Logo" />
+      </div>
+      <nav id="navMenu">
+        <ul>
+          <li><a href="/">Főoldal</a></li>
+          <li><a href="minta.html">Történet</a></li>
+          <li><a href="minta.html">Map</a></li>
+          <li><a href="minta.html">Classok</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="jump-to-top">
+        <a href="#top" id="jump-to-top">
+          <img src="./imgs/arrow-up.png" alt="Ugrás a tetejére" />
+        </a>
+      </div>
+      <div class="hero">
+        <video video autoplay muted loop>
+          <source src="video/videoplayback.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-interactions">
+          <div class="hero-text">
+            <h1>AION</h1>
+            <p>Egy hatalmas <span class="text-hl">MMORPG</span> tele kalandokkal</p>
+          </div>
+          <div class="hero-buttons">
+            <a href="#download" id="download-b">Letöltés</a>
+            <a href="#details" id="details-b">Tudj meg többet</a>
+          </div>
+        </div>
+        
+    </main>
+    <article class="scroller">
+      <section id="details">
+        <div class="direction">
+          <div class="illust">
+            <img src="imgs/history.png" alt="AION Története Illusztráció" />
+          </div>
+          <div class="article-text">
+            <h2>Történet</h2>
+            <p>
+              Az AION történetéről részletesebben
+            </p>
+            <div class="article-button">
+              <a href="">Több itt</a>
+            </div>
+          </div>
+        
+        </div>
+      </section>
+
+      <section>
+        <div class="direction">
+          
+          <div class="article-text">
+            <h2>Classok</h2>
+            <p>
+              Az elérhető Classokról részletesebben
+            </p>
+            <div class="article-button">
+              <a href="">Több itt</a>
+            </div>
+          </div>
+          <div class="illust">
+            <img id="character-js" src="imgs/character.png" alt="AION Karakter Illusztráció" />
+          </div>
+
+          
+        </div>
+      </section>
+      <section>
+        <div class="direction">
+          <div class="illust">
+            <img id="map-js" src="imgs/map1.png" alt="AION Map Illusztráció" />
+          </div>
+          <div class="article-text">
+            <h2>A map</h2>
+            <p>
+              A világ mapjáról részletesebben
+            </p>
+            <div class="article-button">
+              <a href="">Több itt</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </article>
+    <section>
+      <div class="showcase">
+        <h1>Fedezd fel...</h1>
+        <div class="img-container">
+          
+          <img id="img-show-js" src="imgs/scene.png" alt="AION Scene"/>
+        </div>
+        <div class="img-points">
+          <div><img class="selected-point pointQuery" id="point1" src="imgs/circle.svg" alt=""></div>
+          <div><img class="pointQuery" id="point2" src="imgs/circle.svg" alt=""></div>
+          <div><img class="pointQuery" id="point3" src="imgs/circle.svg" alt=""></div>
+          <div><img class="pointQuery" id="point4" src="imgs/circle.svg" alt=""></div>
+          <div><img class="pointQuery" id="point5" src="imgs/circle.svg" alt=""></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download">
+      <div class="download-container">
+        <div class="download-title">
+          <h1>Letöltés</h1>
+          <p>Az AION letöltéséhez kattints a gombra</p>
+        </div>
+        <div class="download-button">
+          <a href="https://www.aiononline.com/en-us" target="_blank" id="download-b">Letöltés</a>
+        </div>
+      </div>
+    </section>
+  
+    <bottom>
+      <p>Csapat: D</p>
+      <p>Készítette: Imre</p>
+    </bottom>
+  </body>
+  <script src="javascript/index.js"></script>
+</html>

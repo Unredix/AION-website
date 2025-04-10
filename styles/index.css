@@ -1,0 +1,253 @@
+:root {
+  --bg-color: #292727;
+  --text-color: #ffffff;
+  --primary-color: #26758d;
+  --secondary-color: #e7e7e7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.jump-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.jump-to-top a img {
+  width: 20px;
+  height: 16px;
+}
+.jump-to-top:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.text-hl {
+  color: var(--primary-color);
+  text-shadow: 0px 0px 10px rgba(34, 34, 34, 0.7);
+}
+
+.hero {
+  height: 86.5vh;
+  width: 86.5vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 2rem;
+  justify-self: center;
+  margin: 50px auto;
+  margin-top: 50px;
+}
+
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(0.4);
+  z-index: 1;
+  position: absolute;
+}
+.hero-interactions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.hero-text {
+  z-index: 2;
+  font-size: 2rem;
+  color: var(--text-color);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  z-index: 2;
+}
+.hero-buttons a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+#details-b {
+  background-color: var(--primary-color);
+}
+#details-b:hover {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+#download-b {
+  background-color: var(--secondary-color);
+  color: var(--bg-color);
+}
+#download-b:hover {
+  background-color: var(--bg-color);
+  color: var(--secondary-color);
+}
+
+/* .scroller {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  height: 50vh;
+}
+
+.scroller section {
+  scroll-snap-align: start;
+} */
+
+.direction {
+  display: flex;
+  flex-direction: row;
+  height: 45vh;
+}
+/* .direction::after {
+  content: "";
+  display: block;
+  width: 0.25vw;
+  height: 100%;
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  margin-top: -20px;
+} */
+.illust {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.illust img {
+  width: 400px;
+  min-width: 50%;
+  border-radius: 7px;
+  transition: transform 0.3s ease;
+}
+.illust img:hover {
+  transform: scale(1.05);
+}
+.illust::after {
+  content: "";
+  display: block;
+  width: 0.25vw;
+  height: 0.25vw;
+}
+.article-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.article-button {
+  margin-top: 50px;
+}
+.article-button a {
+  padding: 15px 30px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.article-button a:hover {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.showcase {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 86.5vw;
+  height: 100%;
+  border-radius: 10px;
+  margin: 6% auto;
+}
+.img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.img-container img {
+  border-radius: 10px;
+  max-height: 85vh;
+  min-height: 85vh;
+  width: 100%;
+  object-fit: cover;
+}
+.img-points {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-points div {
+  display: flex;
+  flex-direction: row;
+  width: min-content;
+  font-size: 100px;
+}
+.img-points div img {
+  width: 3.5vw;
+  height: 3.5vw;
+  margin: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.selected-point {
+  border: 2px solid var(--primary-color);
+  box-shadow: 0px 0px 10px rgba(38, 117, 141, 0.7);
+}
+
+.download-container {
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  border-radius: 10px;
+  width: 85.5vw;
+  height: 100vh;
+  background-color: var(--secondary-color);
+  color: var(--bg-color);
+}
+.download-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.download-button a {
+  color: var(--bg-color);
+  background-color: var(--primary-color);
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px solid var(--bg-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
