@@ -21,7 +21,7 @@ html {
 header {
   padding: 20px;
   text-align: center;
-  background-image: url("./imgs/banner.png");
+  background-image: url("/imgs/banner.png");
 }
 
 #navMenu ul {
